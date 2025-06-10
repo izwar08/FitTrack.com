@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Pencatat Aktivitas Olahraga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav class="navbar">
+        <a href="https://my.unpam.ac.id/" target="_blank" class="link">
+            <img src="src/logo.png" alt="logo Universitas" class="logo" />
+        </a>
+        <div class="navbar-title">🏃‍♂ Catatan Olahraga 🏃‍♂</div>
+    </nav>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>FitTrack</h1>
+        <form id="activity-form">
+            <label for="activity">Jenis Olahraga</label>
+            <select id="activity" required>
+                <option value="lari">Lari</option>
+                <option value="bersepeda">Bersepeda</option>
+                <option value="renang">Renang</option>
+            </select>
+
+            <label for="duration">Durasi (menit)</label>
+            <input type="number" id="duration" placeholder="Masukkan waktu dalam menit" required>
+
+            <button type="submit">Tambah Aktivitas</button>
+        </form>
+
+        <table id="activity-table">
+            <thead>
+                <tr>
+                    <th>Olahraga</th>
+                    <th>Durasi (mnt)</th>
+                    <th>Kalori</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+        <footer class="footer">
+        © ilhampmungkas
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
